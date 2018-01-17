@@ -1,0 +1,1241 @@
+﻿Log file open, 01/17/18 11:05:28
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(413610183) SRandInit(413610183).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.071462
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: E:/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.01.17-16.05.28:746][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.17-16.05.28:746][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.01.17-16.05.28:754][  0]LogInit: Computer: LYSANDER-PC
+[2018.01.17-16.05.28:754][  0]LogInit: User: Lysander
+[2018.01.17-16.05.28:754][  0]LogInit: CPU Page size=65536, Cores=4
+[2018.01.17-16.05.28:754][  0]LogInit: High frequency timer resolution =3.897231 MHz
+[2018.01.17-16.05.28:754][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2018.01.17-16.05.28:754][  0]LogMemory: Platform Memory Stats for Windows
+[2018.01.17-16.05.28:754][  0]LogMemory: Process Physical Memory: 265.67 MB used, 265.67 MB peak
+[2018.01.17-16.05.28:754][  0]LogMemory: Process Virtual Memory: 262.45 MB used, 262.45 MB peak
+[2018.01.17-16.05.28:754][  0]LogMemory: Physical Memory: 4017.13 MB used,  4125.68 MB free, 8142.80 MB total
+[2018.01.17-16.05.28:754][  0]LogMemory: Virtual Memory: 678.69 MB used,  4125.68 MB free, 134217728.00 MB total
+[2018.01.17-16.05.28:816][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2018.01.17-16.05.29:341][  0]LogD3D11RHI: D3D11 adapters:
+[2018.01.17-16.05.29:375][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2018.01.17-16.05.29:375][  0]LogD3D11RHI:       8086/0/4071 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.01.17-16.05.29:378][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.01.17-16.05.29:378][  0]LogD3D11RHI:       0/0/4071 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.01.17-16.05.29:378][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.01.17-16.05.29:383][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.01.17-16.05.29:383][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2018.01.17-16.05.29:383][  0]LogWindows: EnumDisplayDevices:
+[2018.01.17-16.05.29:384][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2018.01.17-16.05.29:384][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.01.17-16.05.29:384][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.01.17-16.05.29:384][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2018.01.17-16.05.29:384][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.01.17-16.05.29:384][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2018.01.17-16.05.29:384][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.01.17-16.05.29:384][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.01.17-16.05.29:384][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.01.17-16.05.29:404][  0]LogD3D11RHI: Async texture creation enabled
+[2018.01.17-16.05.29:426][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.01.17-16.05.29:468][  0]LogShaderCompilers: Guid format shader working directory is 7 characters bigger than the processId version (../../../../repos/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/8448/).
+[2018.01.17-16.05.29:468][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Lysander/AppData/Local/Temp/UnrealShaderWorkingDir/EF30534C47547D11342E6199764514F8/'.
+[2018.01.17-16.05.29:468][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.01.17-16.05.30:280][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.01.17-16.05.30:317][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.01.17-16.05.30:355][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.01.17-16.05.30:391][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.01.17-16.05.30:430][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.01.17-16.05.30:469][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.01.17-16.05.30:506][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.01.17-16.05.30:542][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.01.17-16.05.30:570][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.01.17-16.05.30:605][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.01.17-16.05.30:640][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.01.17-16.05.30:676][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.01.17-16.05.30:712][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.01.17-16.05.30:747][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.01.17-16.05.30:784][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.01.17-16.05.30:854][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.01.17-16.05.30:854][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.01.17-16.05.30:878][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.01.17-16.05.30:948][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.01.17-16.05.30:970][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.01.17-16.05.31:005][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.01.17-16.05.31:040][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.01.17-16.05.31:074][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.01.17-16.05.31:109][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.01.17-16.05.31:109][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.01.17-16.05.31:370][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache: Loaded boot cache 0.03s 50MB C:/Users/Lysander/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Lysander/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../repos/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../repos/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.01.17-16.05.31:403][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.01.17-16.05.31:417][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.01.17-16.05.31:429][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Lysander/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.01.17-16.05.31:435][  0]LogSlate: Using Freetype 2.6.0
+[2018.01.17-16.05.31:436][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.17-16.05.31:436][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.01.17-16.05.31:657][  0]LogInit: Selected Device Profile: [Windows]
+[2018.01.17-16.05.31:659][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.01.17-16.05.31:806][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.01.17-16.05.31:832][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.01.17-16.05.31:862][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.01.17-16.05.31:862][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.01.17-16.05.31:862][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.01.17-16.05.32:216][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2018.01.17-16.05.32:253][  0]LogAssetRegistry: FAssetRegistry took 0.0220 seconds to start up
+[2018.01.17-16.05.32:286][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.018169 seconds
+[2018.01.17-16.05.32:291][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2018.01.17-16.05.32:291][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2018.01.17-16.05.32:291][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.01.17-16.05.32:326][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.01.17-16.05.33:477][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.01.17-16.05.33:507][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.01.17-16.05.33:871][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.01.17-16.05.34:122][  0]SourceControl: Info Source control is disabled
+[2018.01.17-16.05.34:159][  0]SourceControl: Info Source control is disabled
+[2018.01.17-16.05.34:190][  0]SourceControl: Info Source control is disabled
+[2018.01.17-16.05.34:222][  0]SourceControl: Info Source control is disabled
+[2018.01.17-16.05.35:033][  0]LogEngine: Initializing Engine...
+[2018.01.17-16.05.35:034][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.01.17-16.05.35:114][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.01.17-16.05.35:114][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.01.17-16.05.35:187][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.01.17-16.05.35:196][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.01.17-16.05.35:216][  0]LogInit: FAudioDevice initialized.
+[2018.01.17-16.05.35:237][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Lysander/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2018.01.17-16.05.35:242][  0]LogInit: Texture streaming: Enabled
+[2018.01.17-16.05.35:295][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.01.17-16.05.35:349][  0]LogInit: Transaction tracking system initialized
+[2018.01.17-16.05.35:551][  0]BlueprintLog: New page: Editor Load
+[2018.01.17-16.05.36:095][  0]LocalizationService: Info Localization service is disabled
+[2018.01.17-16.05.36:548][  0]LogConsoleResponse:Display: 
+[2018.01.17-16.05.36:632][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.01.17-16.05.36:632][  0]LogCook:Display: Mobile HDR setting 1
+[2018.01.17-16.05.37:258][  0]LogFileCache: Scanning file cache for directory 'E:/repos/04_BattleTank/BattleTank/Content/' took 0.01s
+[2018.01.17-16.05.37:286][  0]SourceControl: Info Source control is disabled
+[2018.01.17-16.05.37:286][  0]Cmd: MAP LOAD FILE="../../../../repos/04_BattleTank/BattleTank/Content/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.01.17-16.05.37:287][  0]LightingResults: New page: Lighting Build
+[2018.01.17-16.05.37:310][  0]MapCheck: New page: Map Check
+[2018.01.17-16.05.37:310][  0]LightingResults: New page: Lighting Build
+[2018.01.17-16.05.37:458][  0]LogAIModule: Creating AISystem for world BattleGround
+[2018.01.17-16.05.37:475][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.01.17-16.05.37:475][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.01.17-16.05.37:507][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 32.268ms to complete.
+[2018.01.17-16.05.37:507][  0]LogFileHelpers: Loading map 'BattleGround' took 0.221
+[2018.01.17-16.05.37:719][  0]LogCollectionManager: Loaded 0 collections in 0.001224 seconds
+[2018.01.17-16.05.37:782][  0]LogFileCache: Scanning file cache for directory 'E:/repos/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2018.01.17-16.05.37:782][  0]LogFileCache: Scanning file cache for directory 'E:/repos/04_BattleTank/BattleTank/Content/Developers/Lysander/Collections/' took 0.01s
+[2018.01.17-16.05.37:782][  0]LogFileCache: Scanning file cache for directory 'E:/repos/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2018.01.17-16.05.37:782][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.01.17-16.05.37:790][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 2247 classes and 457 folders.
+[2018.01.17-16.05.37:830][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2018.01.17-16.05.37:870][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2018.01.17-16.05.37:944][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.01.17-16.05.37:949][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2018.01.17-16.05.38:001][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
+[2018.01.17-16.05.38:001][  0]LogLoad: (Engine Initialization) Total time: 10.98 seconds
+[2018.01.17-16.05.38:001][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.06 seconds
+[2018.01.17-16.05.38:001][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.01.17-16.05.38:011][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2018.01.17-16.05.38:011][  0]LogOcInput: OculusInput pre-init called
+[2018.01.17-16.05.38:025][  0]LogAssetRegistry: Asset discovery search completed in 5.7936 seconds
+[2018.01.17-16.05.38:025][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2018.01.17-16.05.38:025][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000012 seconds (updated 0 objects)
+[2018.01.17-16.05.38:028][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.01.17-16.05.38:035][  0]LogSlate: Took 0.000246 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.01.17-16.05.38:037][  0]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.01.17-16.05.38:193][  0]LogRenderer: Reallocating scene render targets to support 1992x1284 NumSamples 1 (Frame:2).
+[2018.01.17-16.05.45:845][892]LogTexture:Display: Building textures: Texture2D_2 (G8, 128X128) - 88 MB total VRAM
+[2018.01.17-16.15.59:080][323]LogSlate: Took 0.000223 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.17-16.15.59:645][323]LogTexture:Display: Building textures: Texture2D_0 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:659][323]LogTexture:Display: Building textures: Texture2D_1 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:669][323]LogTexture:Display: Building textures: Texture2D_2 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:679][323]LogTexture:Display: Building textures: Texture2D_3 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:689][323]LogTexture:Display: Building textures: Texture2D_4 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:698][323]LogTexture:Display: Building textures: Texture2D_5 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:708][323]LogTexture:Display: Building textures: Texture2D_6 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:717][323]LogTexture:Display: Building textures: Texture2D_7 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:727][323]LogTexture:Display: Building textures: Texture2D_8 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:736][323]LogTexture:Display: Building textures: Texture2D_9 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:746][323]LogTexture:Display: Building textures: Texture2D_10 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:756][323]LogTexture:Display: Building textures: Texture2D_11 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:766][323]LogTexture:Display: Building textures: Texture2D_12 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:776][323]LogTexture:Display: Building textures: Texture2D_13 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:785][323]LogTexture:Display: Building textures: Texture2D_14 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:794][323]LogTexture:Display: Building textures: Texture2D_15 (BGRA8, 512X512) - 88 MB total VRAM
+[2018.01.17-16.15.59:810][323]LogMaterial: 0.00 seconds spent updating 1 materials, 64 interfaces, 0 instances, 0 with static permutations.
+[2018.01.17-16.17.00:668][515]MapCheck: New page: Map Check
+[2018.01.17-16.17.00:784][515]LightingResults: New page: Lighting Build - Jan 17, 2018, 6:17:00 AM
+[2018.01.17-16.17.01:079][515]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2018.01.17-16.17.01:147][515]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2018.01.17-16.17.01:157][515]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2018.01.17-16.17.01:685][515]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2018.01.17-16.17.01:685][515]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8448
+[2018.01.17-16.17.04:484][515]LightingResults:Warning: Performance Warning No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2018.01.17-16.17.04:485][515]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2018.01.17-16.17.04:485][515]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2018.01.17-16.17.04:485][515]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2018.01.17-16.17.04:485][515]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2018.01.17-16.17.04:485][515]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2018.01.17-16.17.04:823][515]LogEditorBuildUtils: Build time 0:04
+[2018.01.17-16.17.04:981][516]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1, compiling. Is special engine material.
+[2018.01.17-16.17.04:986][516]LogTemp:Display: Added material ShaderMap 0x000001AA3EC60B80 with Material 0x000001AA20AB7D00 to ShaderMapsBeingCompiled
+[2018.01.17-16.17.04:997][516]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1, GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:001][516]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1, compiling. Is special engine material.
+[2018.01.17-16.17.05:002][516]LogTemp:Display: Added material ShaderMap 0x000001AA3EC5A780 with Material 0x000001AA20AB7100 to ShaderMapsBeingCompiled
+[2018.01.17-16.17.05:005][516]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1, GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:039][517]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB5900
+[2018.01.17-16.17.05:039][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:041][517]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB5C00
+[2018.01.17-16.17.05:041][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:043][517]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB5F00
+[2018.01.17-16.17.05:043][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_3, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:044][517]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB6200
+[2018.01.17-16.17.05:044][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_3, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:046][517]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB6500
+[2018.01.17-16.17.05:046][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:047][517]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB4100
+[2018.01.17-16.17.05:047][517]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:060][518]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA83080700
+[2018.01.17-16.17.05:060][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_5, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:062][518]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA83083100
+[2018.01.17-16.17.05:062][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_5, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:063][518]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA83080A00
+[2018.01.17-16.17.05:063][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:065][518]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA83081600
+[2018.01.17-16.17.05:065][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:066][518]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA83081000
+[2018.01.17-16.17.05:066][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_7, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:068][518]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA83082200
+[2018.01.17-16.17.05:068][518]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_7, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:078][519]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB4A00
+[2018.01.17-16.17.05:078][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:080][519]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB5000
+[2018.01.17-16.17.05:080][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:082][519]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB5600
+[2018.01.17-16.17.05:082][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_9, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:083][519]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB4700
+[2018.01.17-16.17.05:083][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_9, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:085][519]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB5300
+[2018.01.17-16.17.05:085][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:086][519]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AB4400
+[2018.01.17-16.17.05:086][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:088][519]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AB6E00
+[2018.01.17-16.17.05:088][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_11, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:090][519]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5FD00
+[2018.01.17-16.17.05:090][519]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_11, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:099][520]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5DC00
+[2018.01.17-16.17.05:099][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:101][520]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5D900
+[2018.01.17-16.17.05:101][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:103][520]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5D600
+[2018.01.17-16.17.05:103][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_13, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:104][520]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5D300
+[2018.01.17-16.17.05:104][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_13, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:106][520]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5D000
+[2018.01.17-16.17.05:106][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:107][520]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5CD00
+[2018.01.17-16.17.05:107][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:108][520]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5CA00
+[2018.01.17-16.17.05:108][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_15, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:110][520]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5C700
+[2018.01.17-16.17.05:110][520]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_15, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:121][521]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5F100
+[2018.01.17-16.17.05:121][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:123][521]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5F400
+[2018.01.17-16.17.05:123][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:125][521]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA16271C00
+[2018.01.17-16.17.05:125][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_17, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:128][521]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA16272800
+[2018.01.17-16.17.05:128][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_17, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:130][521]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA16273A00
+[2018.01.17-16.17.05:130][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:132][521]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA16272B00
+[2018.01.17-16.17.05:132][521]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:144][522]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5C400
+[2018.01.17-16.17.05:144][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_19, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:146][522]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5FA00
+[2018.01.17-16.17.05:146][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_19, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:148][522]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5C100
+[2018.01.17-16.17.05:148][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:150][522]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5DF00
+[2018.01.17-16.17.05:150][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:152][522]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20B5E200
+[2018.01.17-16.17.05:152][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_21, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:155][522]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20B5E500
+[2018.01.17-16.17.05:155][522]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_21, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:162][523]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD6800
+[2018.01.17-16.17.05:162][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:164][523]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD6500
+[2018.01.17-16.17.05:164][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:166][523]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD6200
+[2018.01.17-16.17.05:166][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_23, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:168][523]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD5F00
+[2018.01.17-16.17.05:168][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_23, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:169][523]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD5C00
+[2018.01.17-16.17.05:169][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:171][523]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD5900
+[2018.01.17-16.17.05:171][523]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:181][524]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD7100
+[2018.01.17-16.17.05:181][524]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_25, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:183][524]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD7400
+[2018.01.17-16.17.05:183][524]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_25, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:186][524]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD7700
+[2018.01.17-16.17.05:186][524]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:188][524]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD7A00
+[2018.01.17-16.17.05:188][524]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:198][525]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD6E00
+[2018.01.17-16.17.05:198][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_27, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:200][525]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD3D00
+[2018.01.17-16.17.05:200][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_27, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:202][525]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD3A00
+[2018.01.17-16.17.05:202][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:203][525]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD3700
+[2018.01.17-16.17.05:203][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:205][525]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD3400
+[2018.01.17-16.17.05:205][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_29, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:207][525]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD3100
+[2018.01.17-16.17.05:207][525]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_29, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:216][526]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD1000
+[2018.01.17-16.17.05:216][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:218][526]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD0D00
+[2018.01.17-16.17.05:218][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:220][526]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD0A00
+[2018.01.17-16.17.05:220][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_31, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:221][526]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD0700
+[2018.01.17-16.17.05:221][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_31, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:223][526]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD0400
+[2018.01.17-16.17.05:223][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:224][526]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD0100
+[2018.01.17-16.17.05:224][526]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:232][527]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD4D00
+[2018.01.17-16.17.05:232][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_33, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:234][527]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD4A00
+[2018.01.17-16.17.05:234][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_33, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:236][527]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD4700
+[2018.01.17-16.17.05:236][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:237][527]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD4400
+[2018.01.17-16.17.05:237][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:239][527]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD4100
+[2018.01.17-16.17.05:239][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_35, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:240][527]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD6B00
+[2018.01.17-16.17.05:240][527]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_35, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:246][528]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD1300
+[2018.01.17-16.17.05:246][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:248][528]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD2B00
+[2018.01.17-16.17.05:248][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:250][528]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD1600
+[2018.01.17-16.17.05:250][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_37, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:252][528]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD2E00
+[2018.01.17-16.17.05:252][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_37, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:253][528]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA20AD1900
+[2018.01.17-16.17.05:253][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:255][528]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA20AD1C00
+[2018.01.17-16.17.05:255][528]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:262][529]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C2800
+[2018.01.17-16.17.05:262][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_39, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:264][529]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C2500
+[2018.01.17-16.17.05:264][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_39, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:266][529]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C2200
+[2018.01.17-16.17.05:267][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:268][529]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C1F00
+[2018.01.17-16.17.05:268][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:270][529]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C1C00
+[2018.01.17-16.17.05:270][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_41, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:271][529]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C1900
+[2018.01.17-16.17.05:271][529]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_41, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:276][530]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C3100
+[2018.01.17-16.17.05:276][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:278][530]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C3400
+[2018.01.17-16.17.05:278][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:279][530]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C3700
+[2018.01.17-16.17.05:279][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_43, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:281][530]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C3A00
+[2018.01.17-16.17.05:281][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_43, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:282][530]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C3D00
+[2018.01.17-16.17.05:282][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:284][530]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C2B00
+[2018.01.17-16.17.05:284][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:285][530]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C0100
+[2018.01.17-16.17.05:285][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_45, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:287][530]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C0400
+[2018.01.17-16.17.05:287][530]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_45, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:293][531]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A067700
+[2018.01.17-16.17.05:293][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:294][531]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A067400
+[2018.01.17-16.17.05:294][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:296][531]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A067100
+[2018.01.17-16.17.05:296][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_47, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:298][531]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A066E00
+[2018.01.17-16.17.05:298][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_47, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:299][531]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A066B00
+[2018.01.17-16.17.05:299][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:301][531]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A066800
+[2018.01.17-16.17.05:301][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:302][531]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A066500
+[2018.01.17-16.17.05:302][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_49, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:304][531]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A066200
+[2018.01.17-16.17.05:304][531]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_49, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:311][532]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A064100
+[2018.01.17-16.17.05:311][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:313][532]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A067A00
+[2018.01.17-16.17.05:313][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:315][532]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A067D00
+[2018.01.17-16.17.05:315][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_51, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:316][532]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A064700
+[2018.01.17-16.17.05:316][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_51, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:319][532]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A064A00
+[2018.01.17-16.17.05:319][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:321][532]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A064D00
+[2018.01.17-16.17.05:321][532]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:329][533]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C0A00
+[2018.01.17-16.17.05:329][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_53, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:332][533]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C1000
+[2018.01.17-16.17.05:332][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_53, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:333][533]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C1300
+[2018.01.17-16.17.05:333][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:335][533]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C0700
+[2018.01.17-16.17.05:335][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:337][533]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA209C2E00
+[2018.01.17-16.17.05:337][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_55, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:338][533]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA209C1600
+[2018.01.17-16.17.05:338][533]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_55, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:345][534]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A05DF00
+[2018.01.17-16.17.05:345][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:346][534]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05DC00
+[2018.01.17-16.17.05:346][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:349][534]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A05D900
+[2018.01.17-16.17.05:349][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_57, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:351][534]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05D600
+[2018.01.17-16.17.05:351][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_57, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:353][534]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A05D300
+[2018.01.17-16.17.05:353][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:355][534]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05D000
+[2018.01.17-16.17.05:355][534]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:361][535]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A065600
+[2018.01.17-16.17.05:361][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_59, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:362][535]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A065300
+[2018.01.17-16.17.05:362][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_59, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:364][535]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A065900
+[2018.01.17-16.17.05:364][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:366][535]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05F700
+[2018.01.17-16.17.05:366][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:367][535]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A05E200
+[2018.01.17-16.17.05:367][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_61, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:369][535]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05E500
+[2018.01.17-16.17.05:369][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_61, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:370][535]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA7A05E800
+[2018.01.17-16.17.05:370][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:372][535]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA7A05EB00
+[2018.01.17-16.17.05:372][535]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:377][536]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA8318BD00
+[2018.01.17-16.17.05:377][536]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_63, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:378][536]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA8318BA00
+[2018.01.17-16.17.05:378][536]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_63, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:380][536]LogTemp:Display: Added shader map 0x000001AA3EC60B80 from material 0x000001AA8318B700
+[2018.01.17-16.17.05:380][536]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64, linking to other GameThreadShaderMap 0x000001AA3EC60B80
+[2018.01.17-16.17.05:382][536]LogTemp:Display: Added shader map 0x000001AA3EC5A780 from material 0x000001AA8318B400
+[2018.01.17-16.17.05:382][536]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64, linking to other GameThreadShaderMap 0x000001AA3EC5A780
+[2018.01.17-16.17.05:499][536]LogTemp:Display: Finished compile of shader map 0x000001AA3EC5A780
+[2018.01.17-16.17.05:499][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 as finished
+[2018.01.17-16.17.05:499][536]LogTemp:Display: Marking material as finished 0x000001AA20AB7100
+[2018.01.17-16.17.05:500][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2 as finished
+[2018.01.17-16.17.05:500][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5C00
+[2018.01.17-16.17.05:501][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_3 as finished
+[2018.01.17-16.17.05:501][536]LogTemp:Display: Marking material as finished 0x000001AA20AB6200
+[2018.01.17-16.17.05:501][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4 as finished
+[2018.01.17-16.17.05:501][536]LogTemp:Display: Marking material as finished 0x000001AA20AB4100
+[2018.01.17-16.17.05:502][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_5 as finished
+[2018.01.17-16.17.05:502][536]LogTemp:Display: Marking material as finished 0x000001AA83083100
+[2018.01.17-16.17.05:503][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6 as finished
+[2018.01.17-16.17.05:503][536]LogTemp:Display: Marking material as finished 0x000001AA83081600
+[2018.01.17-16.17.05:503][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_7 as finished
+[2018.01.17-16.17.05:503][536]LogTemp:Display: Marking material as finished 0x000001AA83082200
+[2018.01.17-16.17.05:504][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8 as finished
+[2018.01.17-16.17.05:504][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5000
+[2018.01.17-16.17.05:505][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_9 as finished
+[2018.01.17-16.17.05:505][536]LogTemp:Display: Marking material as finished 0x000001AA20AB4700
+[2018.01.17-16.17.05:506][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10 as finished
+[2018.01.17-16.17.05:506][536]LogTemp:Display: Marking material as finished 0x000001AA20AB4400
+[2018.01.17-16.17.05:506][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_11 as finished
+[2018.01.17-16.17.05:506][536]LogTemp:Display: Marking material as finished 0x000001AA20B5FD00
+[2018.01.17-16.17.05:507][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12 as finished
+[2018.01.17-16.17.05:507][536]LogTemp:Display: Marking material as finished 0x000001AA20B5D900
+[2018.01.17-16.17.05:508][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_13 as finished
+[2018.01.17-16.17.05:508][536]LogTemp:Display: Marking material as finished 0x000001AA20B5D300
+[2018.01.17-16.17.05:508][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14 as finished
+[2018.01.17-16.17.05:508][536]LogTemp:Display: Marking material as finished 0x000001AA20B5CD00
+[2018.01.17-16.17.05:509][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_15 as finished
+[2018.01.17-16.17.05:509][536]LogTemp:Display: Marking material as finished 0x000001AA20B5C700
+[2018.01.17-16.17.05:510][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16 as finished
+[2018.01.17-16.17.05:510][536]LogTemp:Display: Marking material as finished 0x000001AA20B5F400
+[2018.01.17-16.17.05:511][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_17 as finished
+[2018.01.17-16.17.05:511][536]LogTemp:Display: Marking material as finished 0x000001AA16272800
+[2018.01.17-16.17.05:511][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 as finished
+[2018.01.17-16.17.05:511][536]LogTemp:Display: Marking material as finished 0x000001AA16272B00
+[2018.01.17-16.17.05:512][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_19 as finished
+[2018.01.17-16.17.05:512][536]LogTemp:Display: Marking material as finished 0x000001AA20B5FA00
+[2018.01.17-16.17.05:513][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20 as finished
+[2018.01.17-16.17.05:513][536]LogTemp:Display: Marking material as finished 0x000001AA20B5DF00
+[2018.01.17-16.17.05:514][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_21 as finished
+[2018.01.17-16.17.05:514][536]LogTemp:Display: Marking material as finished 0x000001AA20B5E500
+[2018.01.17-16.17.05:514][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22 as finished
+[2018.01.17-16.17.05:514][536]LogTemp:Display: Marking material as finished 0x000001AA20AD6500
+[2018.01.17-16.17.05:515][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_23 as finished
+[2018.01.17-16.17.05:515][536]LogTemp:Display: Marking material as finished 0x000001AA20AD5F00
+[2018.01.17-16.17.05:516][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24 as finished
+[2018.01.17-16.17.05:516][536]LogTemp:Display: Marking material as finished 0x000001AA20AD5900
+[2018.01.17-16.17.05:516][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_25 as finished
+[2018.01.17-16.17.05:516][536]LogTemp:Display: Marking material as finished 0x000001AA20AD7400
+[2018.01.17-16.17.05:517][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26 as finished
+[2018.01.17-16.17.05:517][536]LogTemp:Display: Marking material as finished 0x000001AA20AD7A00
+[2018.01.17-16.17.05:518][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_27 as finished
+[2018.01.17-16.17.05:518][536]LogTemp:Display: Marking material as finished 0x000001AA20AD3D00
+[2018.01.17-16.17.05:518][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28 as finished
+[2018.01.17-16.17.05:518][536]LogTemp:Display: Marking material as finished 0x000001AA20AD3700
+[2018.01.17-16.17.05:519][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_29 as finished
+[2018.01.17-16.17.05:519][536]LogTemp:Display: Marking material as finished 0x000001AA20AD3100
+[2018.01.17-16.17.05:520][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30 as finished
+[2018.01.17-16.17.05:520][536]LogTemp:Display: Marking material as finished 0x000001AA20AD0D00
+[2018.01.17-16.17.05:520][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_31 as finished
+[2018.01.17-16.17.05:520][536]LogTemp:Display: Marking material as finished 0x000001AA20AD0700
+[2018.01.17-16.17.05:521][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32 as finished
+[2018.01.17-16.17.05:521][536]LogTemp:Display: Marking material as finished 0x000001AA20AD0100
+[2018.01.17-16.17.05:522][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_33 as finished
+[2018.01.17-16.17.05:522][536]LogTemp:Display: Marking material as finished 0x000001AA20AD4A00
+[2018.01.17-16.17.05:522][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34 as finished
+[2018.01.17-16.17.05:522][536]LogTemp:Display: Marking material as finished 0x000001AA20AD4400
+[2018.01.17-16.17.05:523][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_35 as finished
+[2018.01.17-16.17.05:523][536]LogTemp:Display: Marking material as finished 0x000001AA20AD6B00
+[2018.01.17-16.17.05:524][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36 as finished
+[2018.01.17-16.17.05:524][536]LogTemp:Display: Marking material as finished 0x000001AA20AD2B00
+[2018.01.17-16.17.05:524][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_37 as finished
+[2018.01.17-16.17.05:524][536]LogTemp:Display: Marking material as finished 0x000001AA20AD2E00
+[2018.01.17-16.17.05:525][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38 as finished
+[2018.01.17-16.17.05:525][536]LogTemp:Display: Marking material as finished 0x000001AA20AD1C00
+[2018.01.17-16.17.05:526][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_39 as finished
+[2018.01.17-16.17.05:526][536]LogTemp:Display: Marking material as finished 0x000001AA209C2500
+[2018.01.17-16.17.05:527][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40 as finished
+[2018.01.17-16.17.05:527][536]LogTemp:Display: Marking material as finished 0x000001AA209C1F00
+[2018.01.17-16.17.05:527][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_41 as finished
+[2018.01.17-16.17.05:527][536]LogTemp:Display: Marking material as finished 0x000001AA209C1900
+[2018.01.17-16.17.05:528][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42 as finished
+[2018.01.17-16.17.05:528][536]LogTemp:Display: Marking material as finished 0x000001AA209C3400
+[2018.01.17-16.17.05:529][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_43 as finished
+[2018.01.17-16.17.05:529][536]LogTemp:Display: Marking material as finished 0x000001AA209C3A00
+[2018.01.17-16.17.05:529][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44 as finished
+[2018.01.17-16.17.05:529][536]LogTemp:Display: Marking material as finished 0x000001AA209C2B00
+[2018.01.17-16.17.05:530][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_45 as finished
+[2018.01.17-16.17.05:530][536]LogTemp:Display: Marking material as finished 0x000001AA209C0400
+[2018.01.17-16.17.05:531][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 as finished
+[2018.01.17-16.17.05:531][536]LogTemp:Display: Marking material as finished 0x000001AA7A067400
+[2018.01.17-16.17.05:531][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_47 as finished
+[2018.01.17-16.17.05:531][536]LogTemp:Display: Marking material as finished 0x000001AA7A066E00
+[2018.01.17-16.17.05:532][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48 as finished
+[2018.01.17-16.17.05:532][536]LogTemp:Display: Marking material as finished 0x000001AA7A066800
+[2018.01.17-16.17.05:533][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_49 as finished
+[2018.01.17-16.17.05:533][536]LogTemp:Display: Marking material as finished 0x000001AA7A066200
+[2018.01.17-16.17.05:533][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50 as finished
+[2018.01.17-16.17.05:533][536]LogTemp:Display: Marking material as finished 0x000001AA7A067A00
+[2018.01.17-16.17.05:534][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_51 as finished
+[2018.01.17-16.17.05:534][536]LogTemp:Display: Marking material as finished 0x000001AA7A064700
+[2018.01.17-16.17.05:535][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52 as finished
+[2018.01.17-16.17.05:535][536]LogTemp:Display: Marking material as finished 0x000001AA7A064D00
+[2018.01.17-16.17.05:535][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_53 as finished
+[2018.01.17-16.17.05:535][536]LogTemp:Display: Marking material as finished 0x000001AA209C1000
+[2018.01.17-16.17.05:536][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54 as finished
+[2018.01.17-16.17.05:536][536]LogTemp:Display: Marking material as finished 0x000001AA209C0700
+[2018.01.17-16.17.05:537][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_55 as finished
+[2018.01.17-16.17.05:537][536]LogTemp:Display: Marking material as finished 0x000001AA209C1600
+[2018.01.17-16.17.05:538][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56 as finished
+[2018.01.17-16.17.05:538][536]LogTemp:Display: Marking material as finished 0x000001AA7A05DC00
+[2018.01.17-16.17.05:538][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_57 as finished
+[2018.01.17-16.17.05:538][536]LogTemp:Display: Marking material as finished 0x000001AA7A05D600
+[2018.01.17-16.17.05:539][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58 as finished
+[2018.01.17-16.17.05:539][536]LogTemp:Display: Marking material as finished 0x000001AA7A05D000
+[2018.01.17-16.17.05:540][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_59 as finished
+[2018.01.17-16.17.05:540][536]LogTemp:Display: Marking material as finished 0x000001AA7A065300
+[2018.01.17-16.17.05:540][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60 as finished
+[2018.01.17-16.17.05:540][536]LogTemp:Display: Marking material as finished 0x000001AA7A05F700
+[2018.01.17-16.17.05:541][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_61 as finished
+[2018.01.17-16.17.05:541][536]LogTemp:Display: Marking material as finished 0x000001AA7A05E500
+[2018.01.17-16.17.05:542][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62 as finished
+[2018.01.17-16.17.05:542][536]LogTemp:Display: Marking material as finished 0x000001AA7A05EB00
+[2018.01.17-16.17.05:542][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_63 as finished
+[2018.01.17-16.17.05:542][536]LogTemp:Display: Marking material as finished 0x000001AA8318BA00
+[2018.01.17-16.17.05:543][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC5A780, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64 as finished
+[2018.01.17-16.17.05:543][536]LogTemp:Display: Marking material as finished 0x000001AA8318B400
+[2018.01.17-16.17.05:545][536]LogTemp:Display: Finished compile of shader map 0x000001AA3EC60B80
+[2018.01.17-16.17.05:545][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 as finished
+[2018.01.17-16.17.05:545][536]LogTemp:Display: Marking material as finished 0x000001AA20AB7D00
+[2018.01.17-16.17.05:546][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2 as finished
+[2018.01.17-16.17.05:546][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5900
+[2018.01.17-16.17.05:547][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_3 as finished
+[2018.01.17-16.17.05:547][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5F00
+[2018.01.17-16.17.05:547][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4 as finished
+[2018.01.17-16.17.05:547][536]LogTemp:Display: Marking material as finished 0x000001AA20AB6500
+[2018.01.17-16.17.05:548][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_5 as finished
+[2018.01.17-16.17.05:548][536]LogTemp:Display: Marking material as finished 0x000001AA83080700
+[2018.01.17-16.17.05:549][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6 as finished
+[2018.01.17-16.17.05:549][536]LogTemp:Display: Marking material as finished 0x000001AA83080A00
+[2018.01.17-16.17.05:550][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_7 as finished
+[2018.01.17-16.17.05:550][536]LogTemp:Display: Marking material as finished 0x000001AA83081000
+[2018.01.17-16.17.05:550][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8 as finished
+[2018.01.17-16.17.05:550][536]LogTemp:Display: Marking material as finished 0x000001AA20AB4A00
+[2018.01.17-16.17.05:551][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_9 as finished
+[2018.01.17-16.17.05:551][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5600
+[2018.01.17-16.17.05:552][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10 as finished
+[2018.01.17-16.17.05:552][536]LogTemp:Display: Marking material as finished 0x000001AA20AB5300
+[2018.01.17-16.17.05:552][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_11 as finished
+[2018.01.17-16.17.05:552][536]LogTemp:Display: Marking material as finished 0x000001AA20AB6E00
+[2018.01.17-16.17.05:553][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12 as finished
+[2018.01.17-16.17.05:553][536]LogTemp:Display: Marking material as finished 0x000001AA20B5DC00
+[2018.01.17-16.17.05:554][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_13 as finished
+[2018.01.17-16.17.05:554][536]LogTemp:Display: Marking material as finished 0x000001AA20B5D600
+[2018.01.17-16.17.05:554][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14 as finished
+[2018.01.17-16.17.05:554][536]LogTemp:Display: Marking material as finished 0x000001AA20B5D000
+[2018.01.17-16.17.05:555][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_15 as finished
+[2018.01.17-16.17.05:555][536]LogTemp:Display: Marking material as finished 0x000001AA20B5CA00
+[2018.01.17-16.17.05:556][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16 as finished
+[2018.01.17-16.17.05:556][536]LogTemp:Display: Marking material as finished 0x000001AA20B5F100
+[2018.01.17-16.17.05:556][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_17 as finished
+[2018.01.17-16.17.05:556][536]LogTemp:Display: Marking material as finished 0x000001AA16271C00
+[2018.01.17-16.17.05:557][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 as finished
+[2018.01.17-16.17.05:557][536]LogTemp:Display: Marking material as finished 0x000001AA16273A00
+[2018.01.17-16.17.05:558][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_19 as finished
+[2018.01.17-16.17.05:558][536]LogTemp:Display: Marking material as finished 0x000001AA20B5C400
+[2018.01.17-16.17.05:558][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20 as finished
+[2018.01.17-16.17.05:558][536]LogTemp:Display: Marking material as finished 0x000001AA20B5C100
+[2018.01.17-16.17.05:559][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_21 as finished
+[2018.01.17-16.17.05:559][536]LogTemp:Display: Marking material as finished 0x000001AA20B5E200
+[2018.01.17-16.17.05:560][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22 as finished
+[2018.01.17-16.17.05:560][536]LogTemp:Display: Marking material as finished 0x000001AA20AD6800
+[2018.01.17-16.17.05:560][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_23 as finished
+[2018.01.17-16.17.05:560][536]LogTemp:Display: Marking material as finished 0x000001AA20AD6200
+[2018.01.17-16.17.05:561][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24 as finished
+[2018.01.17-16.17.05:561][536]LogTemp:Display: Marking material as finished 0x000001AA20AD5C00
+[2018.01.17-16.17.05:562][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_25 as finished
+[2018.01.17-16.17.05:562][536]LogTemp:Display: Marking material as finished 0x000001AA20AD7100
+[2018.01.17-16.17.05:563][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26 as finished
+[2018.01.17-16.17.05:563][536]LogTemp:Display: Marking material as finished 0x000001AA20AD7700
+[2018.01.17-16.17.05:563][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_27 as finished
+[2018.01.17-16.17.05:563][536]LogTemp:Display: Marking material as finished 0x000001AA20AD6E00
+[2018.01.17-16.17.05:564][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28 as finished
+[2018.01.17-16.17.05:564][536]LogTemp:Display: Marking material as finished 0x000001AA20AD3A00
+[2018.01.17-16.17.05:565][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_29 as finished
+[2018.01.17-16.17.05:565][536]LogTemp:Display: Marking material as finished 0x000001AA20AD3400
+[2018.01.17-16.17.05:565][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30 as finished
+[2018.01.17-16.17.05:565][536]LogTemp:Display: Marking material as finished 0x000001AA20AD1000
+[2018.01.17-16.17.05:566][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_31 as finished
+[2018.01.17-16.17.05:566][536]LogTemp:Display: Marking material as finished 0x000001AA20AD0A00
+[2018.01.17-16.17.05:567][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32 as finished
+[2018.01.17-16.17.05:567][536]LogTemp:Display: Marking material as finished 0x000001AA20AD0400
+[2018.01.17-16.17.05:567][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_33 as finished
+[2018.01.17-16.17.05:567][536]LogTemp:Display: Marking material as finished 0x000001AA20AD4D00
+[2018.01.17-16.17.05:568][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34 as finished
+[2018.01.17-16.17.05:568][536]LogTemp:Display: Marking material as finished 0x000001AA20AD4700
+[2018.01.17-16.17.05:569][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_35 as finished
+[2018.01.17-16.17.05:569][536]LogTemp:Display: Marking material as finished 0x000001AA20AD4100
+[2018.01.17-16.17.05:569][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36 as finished
+[2018.01.17-16.17.05:569][536]LogTemp:Display: Marking material as finished 0x000001AA20AD1300
+[2018.01.17-16.17.05:570][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_37 as finished
+[2018.01.17-16.17.05:570][536]LogTemp:Display: Marking material as finished 0x000001AA20AD1600
+[2018.01.17-16.17.05:571][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38 as finished
+[2018.01.17-16.17.05:571][536]LogTemp:Display: Marking material as finished 0x000001AA20AD1900
+[2018.01.17-16.17.05:571][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_39 as finished
+[2018.01.17-16.17.05:571][536]LogTemp:Display: Marking material as finished 0x000001AA209C2800
+[2018.01.17-16.17.05:572][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40 as finished
+[2018.01.17-16.17.05:572][536]LogTemp:Display: Marking material as finished 0x000001AA209C2200
+[2018.01.17-16.17.05:573][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_41 as finished
+[2018.01.17-16.17.05:573][536]LogTemp:Display: Marking material as finished 0x000001AA209C1C00
+[2018.01.17-16.17.05:573][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42 as finished
+[2018.01.17-16.17.05:573][536]LogTemp:Display: Marking material as finished 0x000001AA209C3100
+[2018.01.17-16.17.05:574][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_43 as finished
+[2018.01.17-16.17.05:574][536]LogTemp:Display: Marking material as finished 0x000001AA209C3700
+[2018.01.17-16.17.05:575][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44 as finished
+[2018.01.17-16.17.05:575][536]LogTemp:Display: Marking material as finished 0x000001AA209C3D00
+[2018.01.17-16.17.05:576][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_45 as finished
+[2018.01.17-16.17.05:576][536]LogTemp:Display: Marking material as finished 0x000001AA209C0100
+[2018.01.17-16.17.05:576][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 as finished
+[2018.01.17-16.17.05:576][536]LogTemp:Display: Marking material as finished 0x000001AA7A067700
+[2018.01.17-16.17.05:577][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_47 as finished
+[2018.01.17-16.17.05:577][536]LogTemp:Display: Marking material as finished 0x000001AA7A067100
+[2018.01.17-16.17.05:578][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48 as finished
+[2018.01.17-16.17.05:578][536]LogTemp:Display: Marking material as finished 0x000001AA7A066B00
+[2018.01.17-16.17.05:578][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_49 as finished
+[2018.01.17-16.17.05:578][536]LogTemp:Display: Marking material as finished 0x000001AA7A066500
+[2018.01.17-16.17.05:579][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50 as finished
+[2018.01.17-16.17.05:579][536]LogTemp:Display: Marking material as finished 0x000001AA7A064100
+[2018.01.17-16.17.05:580][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_51 as finished
+[2018.01.17-16.17.05:580][536]LogTemp:Display: Marking material as finished 0x000001AA7A067D00
+[2018.01.17-16.17.05:580][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52 as finished
+[2018.01.17-16.17.05:580][536]LogTemp:Display: Marking material as finished 0x000001AA7A064A00
+[2018.01.17-16.17.05:581][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_53 as finished
+[2018.01.17-16.17.05:581][536]LogTemp:Display: Marking material as finished 0x000001AA209C0A00
+[2018.01.17-16.17.05:582][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54 as finished
+[2018.01.17-16.17.05:582][536]LogTemp:Display: Marking material as finished 0x000001AA209C1300
+[2018.01.17-16.17.05:582][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_55 as finished
+[2018.01.17-16.17.05:582][536]LogTemp:Display: Marking material as finished 0x000001AA209C2E00
+[2018.01.17-16.17.05:583][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56 as finished
+[2018.01.17-16.17.05:583][536]LogTemp:Display: Marking material as finished 0x000001AA7A05DF00
+[2018.01.17-16.17.05:584][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_57 as finished
+[2018.01.17-16.17.05:584][536]LogTemp:Display: Marking material as finished 0x000001AA7A05D900
+[2018.01.17-16.17.05:584][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58 as finished
+[2018.01.17-16.17.05:584][536]LogTemp:Display: Marking material as finished 0x000001AA7A05D300
+[2018.01.17-16.17.05:585][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_59 as finished
+[2018.01.17-16.17.05:585][536]LogTemp:Display: Marking material as finished 0x000001AA7A065600
+[2018.01.17-16.17.05:586][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60 as finished
+[2018.01.17-16.17.05:586][536]LogTemp:Display: Marking material as finished 0x000001AA7A065900
+[2018.01.17-16.17.05:586][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_61 as finished
+[2018.01.17-16.17.05:586][536]LogTemp:Display: Marking material as finished 0x000001AA7A05E200
+[2018.01.17-16.17.05:587][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62 as finished
+[2018.01.17-16.17.05:587][536]LogTemp:Display: Marking material as finished 0x000001AA7A05E800
+[2018.01.17-16.17.05:588][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_63 as finished
+[2018.01.17-16.17.05:588][536]LogTemp:Display: Marking material as finished 0x000001AA8318BD00
+[2018.01.17-16.17.05:588][536]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_1 complete, GameThreadShaderMap 0x000001AA3EC60B80, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64 as finished
+[2018.01.17-16.17.05:588][536]LogTemp:Display: Marking material as finished 0x000001AA8318B700
+[2018.01.17-16.17.21:237][614]LogSlate: Took 0.000281 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.01.17-16.17.30:280][499]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BattleGround" FILE="../../../../repos/04_BattleTank/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.01.17-16.17.30:523][499]LogSavePackage: Save=228.29ms
+[2018.01.17-16.17.30:523][499]LogSavePackage: Moving '../../../../repos/04_BattleTank/BattleTank/Saved/BattleGround_Auto169FC7BD1414352C8DCE7409345E7FCC5.tmp' to '../../../../repos/04_BattleTank/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap'
+[2018.01.17-16.17.30:524][499]LogSavePackage:Display: Finished SavePackage ../../../../repos/04_BattleTank/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap
+[2018.01.17-16.17.30:546][499]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/BattleGround' took 0.278
+[2018.01.17-16.17.30:546][499]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.278
+[2018.01.17-16.18.53:450][694]Job is a success!
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_4 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_4 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_5 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_5 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_6 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_6 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_7 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_7 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_8 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_8 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_9 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_9 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_10 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_10 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_11 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_11 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_12 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_12 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_13 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_13 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_14 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_14 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_15 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_15 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_16 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_16 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_17 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_17 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_18 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_18 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_19 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_19 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_20 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_20 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_21 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_21 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_22 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_22 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_23 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_23 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_24 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_24 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_25 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_25 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_26 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_26 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_27 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_27 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_28 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_28 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_29 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_29 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_30 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_30 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_31 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_31 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_32 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_32 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_33 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_33 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_34 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_34 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_35 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_35 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_36 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_36 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_37 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_37 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_38 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_38 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_39 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_39 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_40 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_40 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_41 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_41 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_42 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_42 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_43 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_43 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_44 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_44 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_45 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_45 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_46 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_46 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_47 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_47 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_48 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_48 (DXT1, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_49 (AutoDXT, 512X512) - 109 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_49 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_50 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_50 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_51 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_51 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_52 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_52 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_53 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_53 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_54 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_54 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_55 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_55 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_56 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_56 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_57 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_57 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_58 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_58 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_59 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_59 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_60 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_60 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: HQ_Lightmap0_61 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:450][695]LogTexture:Display: Building textures: LQ_Lightmap_0_61 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: HQ_Lightmap0_62 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: LQ_Lightmap_0_62 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: HQ_Lightmap0_63 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: LQ_Lightmap_0_63 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: HQ_Lightmap0_64 (AutoDXT, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: LQ_Lightmap_0_64 (DXT1, 512X512) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: HQ_Lightmap0_65 (AutoDXT, 64X64) - 110 MB total VRAM
+[2018.01.17-16.18.54:451][695]LogTexture:Display: Building textures: LQ_Lightmap_0_65 (DXT1, 64X64) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_4 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_5 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_7 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_6 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_8 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_10 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_9 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_11 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_13 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_14 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_12 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_15 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_16 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_18 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_17 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_19 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_21 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:649][695]LogTexture:Display: Building textures: ShadowMapTexture2D_20 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:650][695]LogTexture:Display: Building textures: ShadowMapTexture2D_22 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_23 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_25 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_24 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_26 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_27 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_28 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_29 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_30 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_31 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_33 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_32 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_36 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_34 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_35 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_37 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_38 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_40 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_39 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_42 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_41 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_43 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_44 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_45 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_47 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_46 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_48 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_49 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_50 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_51 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_52 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_53 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_54 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_55 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_56 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_57 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_58 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_59 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_60 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_61 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_64 (G8, 32X32) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_62 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:828][695]LogTexture:Display: Building textures: ShadowMapTexture2D_63 (G8, 256X256) - 110 MB total VRAM
+[2018.01.17-16.18.54:904][695]Lightmass on LYSANDER-PC: 1:43 min total, 1.69 sec importing, 3.74 sec setup, 9.83 sec photons, 1:28 min processing, 0 ms extra exporting [65/65 mappings]. Threads: 10:19 min total, 8:22 min processing.
+[2018.01.17-16.18.54:974][695]LogStaticLightingSystem: Illumination: 1:54 min (666 ms encoding lightmaps, 373 ms encoding shadowmaps)
+[2018.01.17-16.18.54:974][695]LogStaticLightingSystem: Lightmap texture memory:  32.0 MB (32.0 MB streaming, 0.0 MB non-streaming), 130 textures
+[2018.01.17-16.18.54:974][695]LogStaticLightingSystem: Shadowmap texture memory: 5.3 MB (5.3 MB streaming, 0.0 MB non-streaming), 65 textures
+[2018.01.17-16.18.55:602][695]DumpUnbuiltLightIteractions
+[2018.01.17-16.18.55:602][695]Lights with unbuilt interactions: 0
+[2018.01.17-16.18.55:602][695]
+[2018.01.17-16.18.55:602][695]Primitives with unbuilt interactions: 0
+[2018.01.17-16.18.55:668][696]Cmd: MAP CHECK NOTIFYRESULTS
+[2018.01.17-16.18.55:668][696]MapCheck: New page: BattleGround - Jan 17, 2018, 6:18:55 AM
+[2018.01.17-16.18.55:829][696]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 161.547ms to complete.
+[2018.01.17-16.19.05:666][872]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
+[2018.01.17-16.21.32:457][469]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/Lightmass/Basics/index.html?utm_source=editor&utm_medium=docs&utm_campaign=doc_anchors
+[2018.01.17-16.22.13:588][908]LogSlate: Took 0.000218 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.01.17-16.23.19:706][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BattleGround" FILE="../../../../repos/04_BattleTank/BattleTank/Content/BattleGround.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.01.17-16.23.20:086][813]LogSavePackage: Save=367.25ms
+[2018.01.17-16.23.20:086][813]LogSavePackage: Moving '../../../../repos/04_BattleTank/BattleTank/Saved/BattleGroundA036D2314F003E85AE18EEB0907BA6AD.tmp' to '../../../../repos/04_BattleTank/BattleTank/Content/BattleGround.umap'
+[2018.01.17-16.23.20:088][813]LogSavePackage:Display: Finished SavePackage ../../../../repos/04_BattleTank/BattleTank/Content/BattleGround.umap
+[2018.01.17-16.23.20:103][813]LogFileHelpers: Saving map 'BattleGround' took 0.433
+[2018.01.17-16.23.20:105][813]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BattleGround_BuiltData" FILE="../../../../repos/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset" SILENT=true
+[2018.01.17-16.23.20:519][813]LogSavePackage: Save=411.73ms
+[2018.01.17-16.23.20:519][813]LogSavePackage: Moving '../../../../repos/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData376F25744CA01F43B025C9917D850594.tmp' to '../../../../repos/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset'
+[2018.01.17-16.23.20:521][813]LogSavePackage:Display: Finished SavePackage ../../../../repos/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset
+[2018.01.17-16.23.27:860][665]Cmd: QUIT_EDITOR
+[2018.01.17-16.23.27:888][665]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2018.01.17-16.23.27:908][665]LogExit: Preparing to exit.
+[2018.01.17-16.23.29:012][665]LogDirectoryWatcher: A directory notification for 'E:/repos/04_BattleTank/BattleTank/Content/' was aborted.
+[2018.01.17-16.23.29:045][665]LogExit: Editor shut down
+[2018.01.17-16.23.29:046][665]LogExit: Transaction tracking system shut down
+[2018.01.17-16.23.29:148][665]LogObj: Freed 0b from 0 cluster array pools.
+[2018.01.17-16.23.29:149][665]LogExit: Object subsystem successfully closed.
+[2018.01.17-16.23.29:175][665]LogD3D11RHI: Shutdown
+[2018.01.17-16.23.29:175][665]LogD3D11RHI: CleanupD3DDevice
+[2018.01.17-16.23.29:222][665]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.01.17-16.23.29:231][665]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2018.01.17-16.23.29:231][665]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2018.01.17-16.23.29:231][665]LogModuleManager: Shutting down and abandoning module AddContentDialog (496)
+[2018.01.17-16.23.29:231][665]LogDirectoryWatcher: A directory notification for 'E:/UE_4.15/FeaturePacks/' was aborted.
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module WidgetCarousel (495)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module EditorWidgets (492)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module CollectionManager (490)
+[2018.01.17-16.23.29:233][665]LogDirectoryWatcher: A directory notification for 'E:/repos/04_BattleTank/BattleTank/Content/Collections/' was aborted.
+[2018.01.17-16.23.29:233][665]LogDirectoryWatcher: A directory notification for 'E:/repos/04_BattleTank/BattleTank/Content/Developers/Lysander/Collections/' was aborted.
+[2018.01.17-16.23.29:233][665]LogDirectoryWatcher: A directory notification for 'E:/repos/04_BattleTank/BattleTank/Saved/Collections/' was aborted.
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SceneOutliner (488)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module BspMode (472)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module Media (445)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module SessionServices (432)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
+[2018.01.17-16.23.29:233][665]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
+[2018.01.17-16.23.29:234][665]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2018.01.17-16.23.29:722][665]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
+[2018.01.17-16.23.29:722][665]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
+[2018.01.17-16.23.29:722][665]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
+[2018.01.17-16.23.29:722][665]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
+[2018.01.17-16.23.29:722][665]LogModuleManager: Shutting down and abandoning module MergeActors (402)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module SizeMap (400)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module TreeMap (398)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
+[2018.01.17-16.23.29:723][665]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module XmlParser (382)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module Blutility (380)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
+[2018.01.17-16.23.29:724][665]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
+[2018.01.17-16.23.29:725][665]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
+[2018.01.17-16.23.29:725][665]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module AutomationController (360)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module Layers (356)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module Persona (348)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
+[2018.01.17-16.23.29:788][665]LogModuleManager: Shutting down and abandoning module Kismet (344)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module Toolbox (338)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module OutputLog (332)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module GammaUI (330)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module Documentation (328)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module Niagara (326)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module PortalServices (320)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
+[2018.01.17-16.23.29:789][665]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2018.01.17-16.23.29:790][665]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2018.01.17-16.23.29:790][665]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
+[2018.01.17-16.23.29:790][665]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SteamVR (302)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module OculusInput (294)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module CableComponent (288)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module SourceControl (247)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
+[2018.01.17-16.23.30:009][665]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
+[2018.01.17-16.23.30:010][665]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
+[2018.01.17-16.23.30:010][665]LogModuleManager: Shutting down and abandoning module MainFrame (232)
+[2018.01.17-16.23.30:010][665]LogModuleManager: Shutting down and abandoning module HotReload (231)
+[2018.01.17-16.23.30:010][665]LogDirectoryWatcher: A directory notification for 'E:/repos/04_BattleTank/BattleTank/Binaries/Win64' was aborted.
+[2018.01.17-16.23.30:010][665]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
+[2018.01.17-16.23.30:011][665]LogModuleManager: Shutting down and abandoning module BattleTank (224)
+[2018.01.17-16.23.30:011][665]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2018.01.17-16.23.30:011][665]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2018.01.17-16.23.30:011][665]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2018.01.17-16.23.30:011][665]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2018.01.17-16.23.30:112][665]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2018.01.17-16.23.30:212][665]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2018.01.17-16.23.30:214][665]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module Core (154)
+[2018.01.17-16.23.30:215][665]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2018.01.17-16.23.30:412][665]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.01.17-16.23.30:412][665]LogDirectoryWatcher: A directory notification for '../../../../repos/04_BattleTank/BattleTank/Content/' was aborted.
+[2018.01.17-16.23.30:412][665]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.01.17-16.23.30:413][665]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2018.01.17-16.23.30:415][665]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2018.01.17-16.23.30:443][665]LogDerivedDataCache: Shutdown
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2018.01.17-16.23.30:443][665]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2018.01.17-16.23.30:444][665]LogOnline:Display: Unloading online subsystem: NULL
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2018.01.17-16.23.30:444][665]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2018.01.17-16.23.30:444][665]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.01.17-16.23.30:444][665]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BC3A28E57-48A0-F175-034C-7EB3780B957D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=378dcca348bf8477328b32829acfef5e%7Cc15e907d970843dd860c8fe92883b42e%7C09a74135-a755-4450-b7d2-54aaedada35d&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.01.17-16.23.30:463][665]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2018.01.17-16.23.30:464][665]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.01.17-16.23.30:464][665]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.01.17-16.23.30:464][665]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.01.17-16.23.30:464][665]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.01.17-16.23.30:464][665]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2018.01.17-16.23.30:465][665]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.01.17-16.23.30:466][665]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.01.17-16.23.30:466][665]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.01.17-16.23.30:471][665]LogExit: Exiting.
+[2018.01.17-16.23.30:486][665]Log file closed, 01/17/18 11:23:30
